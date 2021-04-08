@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="f-css/feature_style.css">
+  <link rel="stylesheet" href="f-css/feature_tablet.css">
+  <link rel="stylesheet" href="f-css/feature_mobile.css">
+
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+
+  <link rel="stylesheet" href="f-css/nav.css">
+
+  <link rel="stylesheet" href="f-css/font-awesome.min.css">
+
+
+
+ 
+  <title>Feature</title>
+</head>
+
+<body id="body">
+  <div class="nav_bar">
+    <div class="topnav" id="1-Topnav">
+      <a href="index.html" class="active"><img src="logo.png" class="logo-size"></a>
+      <div class="call">Call. 02-134567 <i class="fa fa-twitter"></i>
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-envelope"></i></div>
+      <div class="nav-container">
+        <a href="index.html">หน้าหลัก</a>
+        <a href="#contact">รู้จักเรา</a>
+        <a href="feature.html" style="color: red;">แบบบ้าน</a>
+        <a href="#about">บริการ</a>
+        <a href="#about">ผลงานของเรา</a>
+        <a href="#about">ข่าวสาร</a>
+        <a href="contact.html">ติดต่อเรา</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+
+    </div>
+
+
+    <script> /*ไว้ให้แฮมเบอร์เกอร์ทำงาน*/
+      function myFunction() {
+        var x = document.getElementById("1-Topnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </div><!-- <nav_bar> -->
+
+
+  <div class="feature_wrapper">
+    <div class="promotion-zone">
+      <div class="pic-zone"></div>
+      <div class="text-ads">
+        <h1>โปรโมชั่น แนะนำ</h1>
+       <!-- <img src="img-feature/Detached house1_temporary.png"  class="pro-1" width="430px" height="240px">
+        <img src="img-feature/Detached house5.png"  class="pro-2"  width="430px" height="240px">
+        <img src="img-feature/6.png" class="pro-3"  width="430px" height="240px">-->
+        <div class="pro-1"></div>
+        <div class="pro-2"></div>
+        <div class="pro-3"></div>
+      </div>
+
+    </div>
+
+
+
+
+    <div class="dropdown_wrap">
+      <div class="space_dropdown">
+        <div class="text_dropdown">
+          <h1>ค้นหาแบบบ้าน ที่ใช่ พร้อมรับข้อเสนอ</h1>
+        </div>
+        <div class="dropdown_home">
+          <input type="checkbox" id="checkbox_toggle">
+          <label for="checkbox_toggle">เลือกแบบบ้าน <i class="fas fa-chevron-down"></i></label>
+
+          <ul>
+            <li><a href="#" class="dropdown active" onclick="filterSelection('all')">ทั้งหมด</a></li>
+            <li><a href="#" class="dropdown active" onclick="filterSelection('1home')">บ้านเดี่ยว</a></li>
+            <li><a href="#" class="dropdown  active" onclick="filterSelection('townhome')">ทาวน์เฮาส์</a></li>
+            <li><a href="#" class="dropdown active" onclick="filterSelection('twinhome')">บ้านแฝด</a></li>
+            <li><a href="#" class="dropdown  active" onclick="filterSelection('condo')">คอนโด&อาคารชุด</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown_layer">
+          <input type="checkbox" id="checkbox_toggle">
+          <label for="checkbox_toggle">จำนวนชั้น <i class="fas fa-chevron-down"></i></label>
+
+          <ul>
+            <li><a href="#" class="dropdown active" >#</a></li>
+            <li><a href="#" class="dropdown active">#</a></li>
+            <li><a href="#" class="dropdown  active" >#</a></li>
+            <li><a href="#" class="dropdown active" >#</a></li>
+            <li><a href="#" class="dropdown  active" >#</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown_space">
+          <input type="checkbox" id="checkbox_toggle">
+          <label for="checkbox_toggle">พื้นที่<i class="fas fa-chevron-down"></i></label>
+
+          <ul>
+            <li><a href="#" class="dropdown active" >#</a></li>
+            <li><a href="#" class="dropdown active" >#</a></li>
+            <li><a href="#" class="dropdown  active" >#</a></li>
+            <li><a href="#" class="dropdown active" >#</a></li>
+            <li><a href="#" class="dropdown  active">คอนโด&อาคารชุด</a></li>
+          </ul>
+        </div>
+
+        <div class="price_filter">
+          <input type="text" id="input_price" onkeyup="myFunction()" placeholder="        ขั้นต่ำ...">
+          <hr class="new1">
+
+          <div class="dropdown_price">
+            <input type="text" id="input_price" onkeyup="myFunction()" placeholder="      ขั้นสูง...">
+          </div>
+        </div>
+
+
+        <div class="room_filter">
+          <input type="text" id="input_room1" onkeyup="myFunction()" placeholder="        ห้องนอน">
+
+
+          <input type="text" id="input_room2" onkeyup="myFunction()" placeholder="      ห้องน้ำ">
+        </div>
+
+        <div class="submit">
+          <button class="button">ค้นหา</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sort">
+      <div><h1>ผลการค้นหาบ้านเดี่ยว ทุกจำนวนชั้น
+        ทุกขนาดพื้นที่ ทุกช่วงราคา</h1>
+      <div class="sort_item">
+        <div class="sort_text">
+          <h2>บ้านเดี่ยว</h2>
+          <h3>จำนวน 31 แบบ</h3>
+        </div>
+      </div></div>
+
+      <div class="sort_button">
+        <button class="sort_price">เรียงลำดับราคา</button>
+        <button class="sort_price2">เรียงลำดับการอัพเดทล่าสุด</button>
+
+      </div>
+    </div>
+
+
+
+    <div class="home_container">
+      <div class="box_home">
+
+        <div class="filterDiv 1home">บ้านเดี่ยว
+          <div class="pic_home"><img src="img-feature/1.jpg" width="291px" height="187px"></div>
+          <div class="name_home">
+            <h3 class="detail_home">JPSTYlE01<br> บ้านชั้นเดียว สไตล์ญี่ปุ่น<br>
+              ภายในเรียบง่าย</h3>
+          </div>
+          <div class="home_icon">
+            <img src="img-feature/bed.png" class="bed" ><h1 class="icon-text1">1</h1>
+            <img src="img-feature/layers.png" class="layer"><h1 class="icon-text2">1</h1>
+            <img src="img-feature/bath.png" class="bath"><h1 class="icon-text3">1</h1>
+          </div>
+          <div class="text-price">เริ่มต้น 1 แสนบาท</div>
+          <button class="button_detail">ดูเพิ่มเติม &nbsp;  <img src="img-feature/next.png"></button>
+        </div>
+
+        <div class="filterDiv 1home">บ้านเดี่ยว
+          <div class="pic_home"><img src="img-feature/2.jpg" width="291px" height="187px"></div>
+          <div class="name_home">
+            <h3 class="detail_home">MODERN01<br>
+              บ้านชั้นเดียว แนวร่วมสมัย<br>
+              เหมาะสำหรับพื้นที่ใช้สอยน้อย</h3>
+          </div>
+          <div class="home_icon">
+            <img src="img-feature/bed.png" class="bed" ><h1 class="icon-text1">1</h1>
+            <img src="img-feature/layers.png" class="layer"><h1 class="icon-text2">1</h1>
+            <img src="img-feature/bath.png" class="bath"><h1 class="icon-text3">1</h1>
+          </div>
+          <div class="text-price">เริ่มต้น 2 แสนบาท</div>
+          <button class="button_detail">ดูเพิ่มเติม &nbsp;  <img src="img-feature/next.png"></button>
+        </div>
+
+        <div class="filterDiv 1home">บ้านเดี่ยว
+          <div class="pic_home"><img src="img-feature/3.jpg" width="291px" height="187px"></div>
+          <div class="name_home">
+            <h3 class="detail_home">COMTEMPORATY01<br>
+              บ้านชั้นเดียว ภายนอกตกแต่ง<br>
+              ให้ดูทันสมัย พร้อมที่จอดรถหนึ่งคัน
+              </h3>
+          </div>
+          <div class="home_icon">
+            <img src="img-feature/bed.png" class="bed" ><h1 class="icon-text1">1</h1>
+            <img src="img-feature/layers.png" class="layer"><h1 class="icon-text2">1</h1>
+            <img src="img-feature/bath.png" class="bath"><h1 class="icon-text3">1</h1>
+          </div>
+          <div class="text-price">เริ่มต้น 3 แสนบาท</div>
+          <button class="button_detail">ดูเพิ่มเติม &nbsp;  <img src="img-feature/next.png"></button>
+        </div>
+
+        <div class="filterDiv 1home">บ้านเดี่ยว
+          <div class="pic_home"><img src="img-feature/4.jpg" width="291px" height="187px"></div>
+          <div class="name_home">
+            <h3 class="detail_home">COMTEMPORATY02<br>
+              บ้านชั้นเดียว สไตล์คอนเทมโพรารี<br>
+              สำหรับครอบครัวเล็ก</h3>
+          </div>
+          <div class="home_icon">
+            <img src="img-feature/bed.png" class="bed" ><h1 class="icon-text1">1</h1>
+            <img src="img-feature/layers.png" class="layer"><h1 class="icon-text2">1</h1>
+            <img src="img-feature/bath.png" class="bath"><h1 class="icon-text3">1</h1>
+          </div>
+          <div class="text-price">เริ่มต้น 1 แสนบาท</div>
+          <button class="button_detail">ดูเพิ่มเติม &nbsp;  <img src="img-feature/next.png"></button>
+        </div>
+
+        <div class="filterDiv  1home">ทาวเฮ้า
+          <div class="pic_home"><img src="img-feature/6.jpg" width="291px" height="187px"></div>
+          <div class="name_home">
+            <h3 class="detail_home">JPSTYlE01<br> บ้านชั้นเดียว สไตล์ญี่ปุ่น<br>
+              ภายในเรียบง่าย</h3>
+          </div>
+          <div class="home_icon">
+            <img src="img-feature/bed.png" class="bed" ><h1 class="icon-text1">2</h1>
+            <img src="img-feature/layers.png" class="layer"><h1 class="icon-text2">1</h1>
+            <img src="img-feature/bath.png" class="bath"><h1 class="icon-text3">2</h1>
+          </div>
+          <div class="text-price">เริ่มต้น 3 แสนบาท</div>
+          <button class="button_detail">ดูเพิ่มเติม &nbsp;  <img src="img-feature/next.png"></button>
+        </div>
+
+        <div class="filterDiv  1home">บ้านแฝด
+          <div class="pic_home"><img src="img-feature/7.jpg" width="291px" height="187px"></div>
+          <div class="name_home">
+            <h3 class="detail_home">MODERN03<br>
+              บ้านชั้นเดียว ภายนอกตกแต่ง<br>
+              ให้ดูทันสมัย พร้อมที่จอดรถหนึ่งคัน
+              </h3>
+          </div>
+          <div class="home_icon">
+            <img src="img-feature/bed.png" class="bed" ><h1 class="icon-text1">2</h1>
+            <img src="img-feature/layers.png" class="layer"><h1 class="icon-text2">1</h1>
+            <img src="img-feature/bath.png" class="bath"><h1 class="icon-text3">2</h1>
+          </div>
+          <div class="text-price">เริ่มต้น 3 แสนบาท</div>
+          <button class="button_detail">ดูเพิ่มเติม &nbsp;  <img src="img-feature/next.png"></button>
+        </div>
+
+        <div class="filterDiv 1home">บ้านแฝด
+          <div class="pic_home"><img src="img-feature/8.jpg" width="291px" height="187px"></div>
+          <div class="name_home">
+            <h3 class="detail_home">COMTEMPORATY03<br>
+              บ้านชั้นเดียว สไตล์คอนเทมโพรารี<br>
+              สำหรับครอบครัวเล็ก</h3>
+          </div>
+          <div class="home_icon">
+            <img src="img-feature/bed.png" class="bed" ><h1 class="icon-text1">2</h1>
+            <img src="img-feature/layers.png" class="layer"><h1 class="icon-text2">1</h1>
+            <img src="img-feature/bath.png" class="bath"><h1 class="icon-text3">2</h1>
+          </div>
+          <div class="text-price">เริ่มต้น 3 แสนบาท</div>
+          <button class="button_detail">ดูเพิ่มเติม &nbsp;  <img src="img-feature/next.png"></button>
+        </div>
+
+        <div class="filterDiv  1home">บ้านแฝด
+          <div class="pic_home"><img src="img-feature/9.jpg" width="291px" height="187px"></div>
+          <div class="name_home">
+            <h3 class="detail_home">MODERN04<br>
+              บ้านชั้นเดียว สไตล์โมเดิร์น<br>
+              ภายในตกแต่งให้ดูทันสมัย
+              </h3>
+          </div>
+          <div class="home_icon">
+            <img src="img-feature/bed.png" class="bed" ><h1 class="icon-text1">1</h1>
+            <img src="img-feature/layers.png" class="layer"><h1 class="icon-text2">2</h1>
+            <img src="img-feature/bath.png" class="bath"><h1 class="icon-text3">1</h1>
+          </div>
+          <div class="text-price">เริ่มต้น 3 แสนบาท</div>
+          <button class="button_detail">ดูเพิ่มเติม &nbsp;  <img src="img-feature/next.png"></button>
+        </div>
+       
+        <div class="filterDiv  1home">คอนโด
+          <div class="pic_home"><img src="img-feature/1.jpg" width="291px" height="187px"></div>
+          <div class="name_home">
+            <h3 class="detail_home">MODERN05<br>
+              บ้านชั้นเดียว สมัยใหม่<br>
+              หลังคา Slab</h3>
+          </div>
+          <div class="home_icon">
+            <img src="img-feature/bed.png" class="bed" ><h1 class="icon-text1">2</h1>
+            <img src="img-feature/layers.png" class="layer"><h1 class="icon-text2">1</h1>
+            <img src="img-feature/bath.png" class="bath"><h1 class="icon-text3">1</h1>
+          </div>
+          <div class="text-price">เริ่มต้น 4 แสนบาท</div>
+          <button class="button_detail">ดูเพิ่มเติม &nbsp;  <img src="img-feature/next.png"></button>
+        </div>
+       
+        <div class="filterDiv condo">คอนโด
+          <div class="pic_home"><img src="img-feature/condo1.jpg" width="291px" height="187px"></div>
+          <div class="name_home">
+            <h3 class="detail_home">CONDO01<br>
+              คอนโดเพื่อคนรุ่นใหม่<br>
+              ราคาย่อมเยาว์</h3>
+          </div>
+          <div class="home_icon">
+            <img src="img-feature/bed.png" class="bed" ><h1 class="icon-text1">2</h1>
+            <img src="img-feature/layers.png" class="layer"><h1 class="icon-text2">1</h1>
+            <img src="img-feature/bath.png" class="bath"><h1 class="icon-text3">2</h1>
+          </div>
+          <div class="text-price">เริ่มต้น 20 ล้านบาท</div>
+          <button class="button_detail">ดูเพิ่มเติม &nbsp;  <img src="img-feature/next.png"></button>
+        </div>
+    </div>
+    
+
+    <div class="filterDiv townhome">คอนโด
+      <div class="pic_home"><img src="img-feature/th1.jpg" width="291px" height="187px"></div>
+      <div class="name_home">
+        <h3 class="detail_home">TOWNHOME<br>
+          ทาวน์เฮ้าน์ผ่อนจ่าย 30 ปี
+          </h3>
+      </div>
+      <div class="home_icon">
+        <img src="img-feature/bed.png" class="bed" ><h1 class="icon-text1">2</h1>
+        <img src="img-feature/layers.png" class="layer"><h1 class="icon-text2">1</h1>
+        <img src="img-feature/bath.png" class="bath"><h1 class="icon-text3">1</h1>
+      </div>
+      <div class="text-price">เริ่มต้น 5 ล้านบาท</div>
+      <button class="button_detail">ดูเพิ่มเติม &nbsp;  <img src="img-feature/next.png"></button>
+    </div>
+
+
+    
+</div>
+    <!--dropdown-->
+    <script>
+      filterSelection("all")
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+          RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+        }
+      }
+
+      function AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+        }
+      }
+
+      function RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+
+
+      var dropdownContainer = document.getElementById("mydropdownContainer");
+      var dropdowns = dropdownContainer.getElementsByClassName("dropdown_home");
+      for (var i = 0; i < btns.length; i++) {
+        dropdowns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script>
+    <!--dropdown-->
+<br><br>
+    <div class="pagination">
+      <a href="#">&laquo;</a>
+      <a href="#">1</a>
+      <a class="active" href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">...</a>
+      
+      <a href="#">&raquo;</a>
+    </div><br><br><br>
+
+    <section class="footer">
+      <div class="footer-container-1">
+        <h2>เกี่ยวกับเรา</h>
+          <h4>ธุรกิจของเรา</h4>
+          <h4>บริการของเรา</h4>
+          <h4>เอกลักษณ์</h4>
+          <h4>แบบบ้าน</h4>
+      </div>
+      <div class="footer-container-2">
+        <h2>ติดต่อเรา</h>
+        <h4>ที่อยู่ :252 ถ.รัชดาภิเษก
+          แขวงห้วยขวาง เขตห้วยขวาง 
+          กรุงเทพฯ 10310 </h4>
+        <h4>โทรศัพท์ : 0-2665-4000</h4>
+        <h4>อีเมล : info@Degol-const.com</h4>
+      </div>
+      <div class="footer-container-3">
+        <h2>ข่าวสาร</h>
+          <h4>ข่าวสารประชาสัมพันธ์</h4>
+          <h4>ข่าวสารเพื่อสังคม</h4>
+          <h4>โปรโมชั่น</h4>
+      </div>
+      <div class="footer-container-4">
+        <h2>ติดตามพวกเรา</h>
+          <h2> <i class="fa fa-twitter"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-envelope"></i>
+            <img src="img-feature/Asset 7.png">
+          </h2>
+          
+       
+      </div>
+    </section><!-- <footer> -->
+    <div class="copyright">
+      Copyright ©2016 Degol Consturction (Thailand)  All Right Reserved.
+    </div>
+  </div><!-- <wrapper> -->
+
+    
+
+
+
+
+  </div>
+</body>
+
+</html>

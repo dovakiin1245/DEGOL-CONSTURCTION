@@ -1,0 +1,325 @@
+@media screen and (max-width: 768px) {
+  /*=============================================================================================*/
+  #body {
+    width: 100%;
+    margin: auto;
+  }
+  .feature_wrapper {
+    width: 100%;
+    margin: auto;
+    height: auto;
+  }
+  .pic-zone {
+    background-image: url(../img-feature/bannertablet.png);
+    background-position: center;
+    margin-top: 100px;
+  }
+  .text-ads {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .text-ads h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .pro-1{
+    width:430px;
+    margin-left:140px;
+    height:240px;
+    background-color: aquamarine;
+    background-image:url(../img-feature/Detached\ house1_temporary.png);
+    
+  }
+   
+  .pro-2{
+    margin-left: 900px;
+    margin-top:10px;
+    width:430px; 
+    height:240px;
+    background-color: rgb(13, 133, 93);
+    position: absolute;
+    background-image:url(../img-feature/Detached house5.png);
+    display: none;
+   
+  }
+  .pro-3{
+    margin-left:850px;
+    margin-top:-240px;
+    position:absolute;
+    width:430px; 
+    height:240px;
+    background-color: rgb(47, 0, 255);
+    background-image:url(../img-feature/6.png);
+    display: none;
+  }
+  .pro-2{
+    margin-left: -10px;
+  }
+  .pro-3{
+    margin-left:-3px;
+    margin-top:0px;
+    position:absolute;
+  }
+  .text_dropdown {
+    margin-left: 100px;
+    font-size: 35px;
+    position: absolute;
+    margin-top: 50px;
+  }
+  .text_dropdown h1 {
+    color: #fff;
+    text-decoration: underline;
+  }
+  .dropdown_wrap {
+    width: 100%;
+    background-color: #141F27;
+    height: 465px;
+    /position: absolute;
+  }
+  .dropdown_home {
+    position: absolute;
+    display: inline-block;
+    font-size: 16px;
+    color: black;
+    margin-left: 30px;
+    /*70 - 40*/
+    margin-top: 150px;
+  }
+  .dropdown_layer {
+    position: absolute;
+    margin-left: 395px;
+    /*415 - 20*/
+    margin-top: 150px;
+  }
+  .dropdown_space {
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 30px;
+  }
+  .price_filter {
+    position: absolute;
+    margin-top: 350px;
+    margin-left: -40px;
+    width: 100%;
+    font-size: 18px;
+  }
+  hr.new1 {
+    border-top: 3px solid rgb(88, 88, 88);
+    width: 39px;
+    margin-left: 212px;
+    margin-top: -25px;
+  }
+  #input_price {
+    width: 143px;
+    height: 50px;
+    margin-left: 70px;
+  }
+  .dropdown_price {
+    position: absolute;
+    margin-top: -28px;
+    margin-left: 180px;
+    width: 100%;
+    font-size: 18px;
+  }
+  .room_filter {
+    width: 324px;
+    height: 50px;
+    /* background-color:aqua;*/
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 395px;
+    font-size: 18px;
+  }
+  #input_room1 {
+    width: 154px;
+    height: 50px;
+    margin-left: 0;
+  }
+  #input_room2 {
+    width: 154px;
+    height: 50px;
+    float: right;
+  }
+  .submit {
+    width: 324px;
+    height: 50px;
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 395px;
+  }
+  .button {
+    background-color: #D44022;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 324px;
+    height: 50px;
+  }
+  .filterDiv {
+    float: left;
+    background-color: #F6F1E8;
+    color: #141F27;
+    width: 340px;
+    height: 494px;
+    line-height: 100px;
+    text-align: center;
+    margin: 10px;
+    display: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px grey;
+  }
+  
+  .box_home {
+    margin-left: 12px;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  .home_container {
+    margin-top: -20px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+     
+    width:100%px;
+  }
+  
+ /*sort*/
+  .sort h1{
+    margin-top: 40px;
+    position: absolute;
+    padding-left:150px;
+    font-size: 18px;
+    color:#D44022;
+  }
+  .sort_item{
+    width: 733px;
+    height: 96px;
+    background-color:#E6E6E6;
+    margin-top: 80px;
+    margin-left:5px;
+    position: absolute;
+  }
+  .sort_text{
+    margin-left: 5px;
+    color:#141F27;
+    font-size: 20px;
+  }
+  .sort_text h2{
+    margin-top:40px;
+    margin-left:10px;
+    
+  }
+  .sort_text h3{
+    font-weight: lighter;
+    margin-left: 95px;
+    margin-top: -25px;
+    
+  }
+  
+  .sort_price{
+    background-color:#D44022;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-top:-25px;
+    margin-left: -260px;
+    cursor: pointer;
+    width:238px;
+    height:60px;
+  }
+  .sort_price2{
+    background-color: #141F27;;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-top:-25px;
+    margin-left: -10px;
+    cursor: pointer;
+    width:238px;
+    height:60px;
+    position: absolute;
+  }
+  .sort_button{
+    width:297px;
+    height:60px;
+    position: absolute;
+    margin-top: 120px;
+    margin-left:503px;
+    transition: box-shadow .3s;
+   
+    
+  }
+  .pagination {
+    display: inline-block;
+    margin-left: 280px;
+  }
+  /*footer*/
+  .footer{
+    clear: both;
+    margin-top: -20px;
+    width: 85%;
+    height: 320px;
+    background-color: #141F27;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 16%;
+  }
+  .footer-container-1{
+    float: left;
+    width: 40%;
+    height: 50%;
+    padding-top: 0px;
+    padding-left: 10px;
+    text-align: left;
+    color: white;
+    
+  }
+  .footer-container-2{
+    float: left;
+    width: 40%;
+    height: 50%;
+    padding-top: 0px;
+    padding-left: 10px;
+    text-align: left;
+    color: white;
+  }
+  .footer-container-3{
+    float: left;
+    width: 40%;
+    height: 50%;
+    padding-top: 0px;
+    padding-left: 10px;
+    text-align: left;
+    color: white;
+  }
+  .footer-container-4{
+    float: left;
+    width: 40%;
+    height: 50%;
+    padding-top: 0px;
+    padding-left: 10px;
+    text-align: left;
+    color: white;
+  }
+  .footer h2{
+    font-size: 20px;
+  }
+  .footer h4{
+    font-size: 15px;
+  }
+  
+}

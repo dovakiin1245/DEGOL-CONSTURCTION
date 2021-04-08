@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEGOL CONSTRUCTION</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style_banner.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+    integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+    crossorigin="anonymous"></script>
+
+    
+
+</head>
+
+<body id="body">
+  <div class="nav_bar">
+    <div class="topnav" id="1-Topnav">
+      <a href="index.html" class="active"><img src="logo.png" class="logo-size"></a>
+      <div class="call">Call. 02-134567 <i class="fa fa-twitter"></i>
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-envelope"></i></div>
+      <div class="nav-container">
+        <a href="index.html" style="color: red;">หน้าหลัก</a>
+        <a href="#contact">รู้จักเรา</a>
+        <a href="feature.html">แบบบ้าน</a>
+        <a href="#about">บริการ</a>
+        <a href="#about">ผลงานของเรา</a>
+        <a href="#about">ข่าวสาร</a>
+        <a href="contact.html">ติดต่อเรา</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+
+    </div>
+
+
+    <script> /*ไว้ให้แฮมเบอร์เกอร์ทำงาน*/
+      function myFunction() {
+        var x = document.getElementById("1-Topnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </div><!-- <nav_bar> -->
+
+  <div class="wrapper"><!-- <wrapper> -->
+    
+
+
+
+    <!-- <banner> -->
+    <div class="slideshow-container">
+      <div class="mySlides fade-01 img-ban1" >
+        <div class="banner-frame"> 
+          <div class="banner-frame-inner">
+            <h1> MODERN HOUSE <br>FOR SALE</h1>
+            <div class="line-bn"></div>
+            <div class="banner-frame-inner-left"> 
+              <h3>PERFECT HOME YOU CAN CHOOSE</h3>
+            </div>
+            <div class="banner-frame-inner-right"> 
+              PRICE START FROM
+              <h2>฿100,000</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides fade-01 img-ban2">
+        <div class="banner-frame-right">
+          <h1>"ให้การสร้างบ้านเป็นเรื่องง่าย"</h1>
+          <h4>ด้วยการสร้างบ้านแบบครบวงจร จากมืออาชีพ</h4>
+        </div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)"><i class="fa fa-chevron-left"></i></a>
+      <a class="next" onclick="plusSlides(1)"><i class="fa fa-chevron-right"></i></a>
+    </div>
+    <br>
+    <script src="js/slideJS.JS"></script>
+    <!-- <banner> -->
+
+
+
+    <section class="service">
+      <div class="service-header">
+        <div class="line-1"></div>
+          <h1>บริการของเรา</h1>
+        <div class="line-1" ></div>
+      </div>
+      <div class="service-menus">
+        <div class="service-menu-item">
+          <div class="service-img">
+            <img src="img/รับเหมา.png">
+          </div>
+          <h1><a>รับเหมาก่อสร้าง</a></h1>
+        </div>
+        <div class="service-menu-item">
+          <div class="service-img">
+          <img src="img/Homedesign.png">
+        </div>
+        <h1><a>ออกแบบ</a></h1></div>
+        <div class="service-menu-item">
+          <div class="service-img">
+          <img src="img/โครงการ.png">
+        </div>
+        <h1><a>ที่ปรึกษาโครงการ</a></h1></div>
+      </div>
+    </section><!-- <service> -->
+
+
+    <section class="barn">
+      <h1>เลือกแบบบ้านตามความต้องการของคุณ เราพร้อมให้บริการปรับบ้านตามความต้องการ</h1>
+      <div class="barn-type">
+        <div class="barn-type-item-1">
+          <!-- <img src="img/Group 25.png" > -->
+          <a>บ้านเดี่ยว</a>
+        </div>
+        <div class="barn-type-item-2">
+          <a>บ้านแฝด</a>
+        </div>
+        <div class="barn-type-item-3">
+          <a>ทาวน์เฮ้าส์</a>
+        </div>
+        <div class="barn-type-item-4">
+          <a>คอนโด & อาคารชุด</a>
+        </div>
+      </div>
+
+      <section class="search">
+        <input type="text" id="bedroom" placeholder="ห้องนอน..." name="fname">
+        <input type="text" id="bath" placeholder="ห้องน้ำ..." name="fname">
+        <input type="text" id="levelfloor" placeholder="จำนวนชั้น..." name="fname" >
+        <div class="search-butt">ค้นหา</div>
+      </section><!-- <search> -->
+
+        <section class="product-home">
+          <div class="catagory-home">
+            <div class="catagory-item-1">
+              <div class="catagory-item-contrainer-left">
+                  <img src="img/p1.png">
+              </div>
+              <div class="catagory-item-contrainer-right">
+                <div class="catagory-item-contrainer-right-header">
+                  <h2>MODERN101</h2>
+                  <h4>บ้านชั้นเดียว ภายนอกตกแต่ง ให้ดูทันสมัย...</h4>
+                </div>
+                <div class="box-contain">
+                  <diV class="box-func">
+                    <i class="fa fa-bed"></i> 1
+                  </diV>
+                  <diV class="box-func">
+                    <i class="fa fa-database"></i> 1
+                  </diV>
+                  <diV class="box-func">
+                    <i class="fa fa-bath"></i> 2
+                  </diV>
+                  <diV class="box-func">
+                    <div class="box-func-button">
+                      ดูทั้งหมด <i class="fa fa fa-chevron-right"></i>
+                    </div>
+                  </diV>
+                </div>
+              </div>
+            </div>
+            <div class="catagory-item-2">
+              <div class="catagory-item-contrainer-left">
+                  <img src="img/p2.png">
+              </div>
+              <div class="catagory-item-contrainer-right">
+                <div class="catagory-item-contrainer-right-header">
+                  <h2>TL20</h2>
+                  <h4>บ้านสองชั้น ออกแบบให้ภายใน แบ่งสัดส่วนอย่างชัดเจน...
+                    </h4>
+                </div>
+                <div class="box-contain">
+                  <diV class="box-func">
+                    <i class="fa fa-bed"></i> 3
+                  </diV>
+                  <diV class="box-func">
+                    <i class="fa fa-database"></i> 2
+                  </diV>
+                  <diV class="box-func">
+                    <i class="fa fa-bath"></i> 2
+                  </diV>
+                  <diV class="box-func">
+                    <div class="box-func-button">
+                      ดูทั้งหมด <i class="fa fa fa-chevron-right"></i>
+                    </div>
+                  </diV>
+                </div>
+              </div>
+            </div>
+            <div class="catagory-item-3">
+              <div class="catagory-item-contrainer-left">
+                  <img src="img/p3.png">
+              </div>
+              <div class="catagory-item-contrainer-right">
+                <div class="catagory-item-contrainer-right-header">
+                  <h2>MODERN102</h2>
+                  <h4>บ้านชั้นเดียว ภายนอกออกแบบ ให้เรียบง่ายสง่างาม...</h4>
+                </div>
+                <div class="box-contain">
+                  <diV class="box-func">
+                    <i class="fa fa-bed"></i> 1
+                  </diV>
+                  <diV class="box-func">
+                    <i class="fa fa-database"></i> 1
+                  </diV>
+                  <diV class="box-func">
+                    <i class="fa fa-bath"></i> 2
+                  </diV>
+                  <diV class="box-func">
+                    <div class="box-func-button">
+                      ดูทั้งหมด <i class="fa fa fa-chevron-right"></i>
+                    </div>
+                  </diV>
+                </div>
+              </div>
+            </div>
+            <div class="catagory-item-4">
+              <div class="catagory-item-contrainer-left">
+                  <img src="img/p4.png">
+              </div>
+              <div class="catagory-item-contrainer-right">
+                <div class="catagory-item-contrainer-right-header">
+                  <h2>TS90  </h2>
+                  <h4>บ้านสองชั้นสำหรับครอบครัว ขนาดเล็กชั้นล่างมีห้องนอน...
+                    </h4>
+                </div>
+                <div class="box-contain">
+                  <diV class="box-func">
+                    <i class="fa fa-bed"></i> 2
+                  </diV>
+                  <diV class="box-func">
+                    <i class="fa fa-database"></i> 2
+                  </diV>
+                  <diV class="box-func">
+                    <i class="fa fa-bath"></i> 2
+                  </diV>
+                  <diV class="box-func">
+                    <div class="box-func-button">
+                      ดูทั้งหมด <i class="fa fa fa-chevron-right"></i>
+                    </div>
+                  </diV>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="slide">
+            <div class="slide-load"></div>
+            <div class="slide-load-active"></div> 
+            <div class="slide-load"></div> 
+            <div class="slide-load"></div>   
+          </div>
+          <div class="more">
+            ดูเพิ่มเติม
+          </div>
+        </section>
+    </section><!-- <barn> -->
+    <section class="portfolio">
+      <div class="service-header">
+        <div class="line-1"></div>
+          <h1>ผลงานของเรา</h1>
+        <div class="line-1" ></div>
+      </div>
+        <div class="activities-product1">  
+          <div class="activities-product-inner">
+            อาคารชุดลานทอง
+          </div>
+        </div>
+        <div class="activities-product2">          
+          <div class="activities-product-inner">
+            บ้านเดี่ยวส่วนบุคคล
+            </div> 
+        </div>
+        <div class="activities-product3">  
+          <div class="activities-product-inner">
+            อพาร์ทเมนท์พักศรีทอง
+          </div>
+        </div>
+        <div class="activities-product4">  
+          <div class="activities-product-inner">
+            หมู่บ้านพูนสุข
+          </div>
+        </div>
+        <div class="more">
+          ดูเพิ่มเติม
+        </div>
+    </section><!-- <portfolio> -->
+    <section class="promotion">
+        <div class="promotion-header">
+          <h1>โปรโมชั่น</h1>
+        </div>
+        <div class="p-option">
+          <div class="p-op-name">บ้านเดี่ยว</div>
+          <div class="p-op-name">บ้านแฝด</div>
+          <div class="p-op-name">ทาวเฮ้าส์</div>
+          <div class="p-op-name">คอนโด</div>
+        </div>
+        
+        <div class="pro-signature">
+          <div class="pro-signature-left">
+            <div class="pro-signature-left-logo">
+              
+            </div>
+            <p>เพราะชีวิตดีๆ...เริ่มต้นที่บ้าน
+              เราจึงมองหาคําตอบของการใช้ชีวิตที่คุณต้องการ 
+              เพื่อนำสิ่งนั้นมาประกอบขึ้นเป็น ‘บ้าน’<br>
+              เริ่มต้น 1.89 ล้านบาท
+            </p>
+              
+              <div class="pro-signature-left-butt">
+                เลือกแบบบ้านที่นี่
+              </div>
+          </div>
+          
+    
+          <div class="pro-signature-right">
+            <div class="vect-op">
+              <img src="img/Group 34.png">
+            </div>
+            <div class="vect-op-pro">
+              <img src="img/pic1.png">
+              <img src="img/pic2.png">
+              <img src="img/pic3.png">
+            </div>
+          </div>
+    
+        </div>
+    </section><!-- <promotion> -->
+    <section class="contact">
+      <h1>ติดต่อเรา</h1>
+      <hr>
+      <div class="contact-container">
+        <div class="contact-left">
+            <input type="text" id="name" placeholder="ชื่อ-นามสกุล" name="fname">
+            <input type="text" id="tel" placeholder="เบอร์โทร" name="fname">
+            <input type="text" id="email" placeholder="E-mail" name="fname" >
+        </div>
+        <div class="contact-right">
+          <form>
+            <textarea placeholder="ข้อความ....."></textarea>
+          </form>
+        </div>
+        <div class="more">
+          ส่งข้อมูล
+        </div>
+      </div>
+    </section><!-- <contact> -->
+
+    <section class="footer">
+      <div class="footer-container-1">
+        <h2>เกี่ยวกับเรา</h>
+          <h4>ธุรกิจของเรา</h4>
+          <h4>บริการของเรา</h4>
+          <h4>เอกลักษณ์</h4>
+          <h4>แบบบ้าน</h4>
+      </div>
+      <div class="footer-container-2">
+        <h2>ติดต่อเรา</h>
+        <h4>ที่อยู่ :252 ถ.รัชดาภิเษก
+          แขวงห้วยขวาง เขตห้วยขวาง 
+          กรุงเทพฯ 10310 </h4>
+        <h4>โทรศัพท์ : 0-2665-4000</h4>
+        <h4>อีเมล : info@Degol-const.com</h4>
+      </div>
+      <div class="footer-container-3">
+        <h2>ข่าวสาร</h>
+          <h4>ข่าวสารประชาสัมพันธ์</h4>
+          <h4>ข่าวสารเพื่อสังคม</h4>
+          <h4>โปรโมชั่น</h4>
+      </div>
+      <div class="footer-container-4">
+        <h2>ติดตามพวกเรา</h>
+          <h2> <i class="fa fa-twitter"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-envelope"></i>
+            <img src="img/Asset 7.png">
+          </h2>
+          
+       
+      </div>
+    </section><!-- <footer> -->
+    <div class="copyright">
+      Copyright ©2016 Degol Consturction (Thailand)  All Right Reserved.
+    </div>
+  </div><!-- <wrapper> -->
+
+</body>
+
+</html>
